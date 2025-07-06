@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src = "script.js" defer></script>
+</head>
+<body>
+    <div class="timer" id= "timer">0</div>
+    <div class="container" >
+      <div oncopy="return false" oncut="return false" class="quote-display" id="quoteDisplay"></div>
+      <textarea class="quote-input" id="quoteInput" autofocus></textarea>
+    </div>
+<div id="timesUpModal" class="modal hidden">
+<div class="modal-content">
+<h2>⏰ Time's up!</h2>
+<p id="wpm-score">WPM: 50</p>
+<p>Would you like to try again or go back to the home page?</p>
+<button id="retryButton" class="modal-btn">Try Again</button>
+<button id="returnHome" class="modal-btn">Home</button>
+</div>
+</div>
+<div class="bottomSection">
+<button id="restartBtn" class="bottomBtn">Restart</button>
+<button id="homeBtn" class="bottomBtn">Home</button>
+</div>
+</body>
+</html> 

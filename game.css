@@ -1,0 +1,129 @@
+* {
+    box-sizing:border-box; 
+}
+
+body { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background: #1E0555; 
+}
+
+body, .quote-input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    background-color: #F0Db4F;
+    padding: 1rem; 
+    border-radius: 0.5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer {
+    position: absolute; 
+    top: 2rem;
+    font-size: 3rem;
+    color:#F0Db4F;
+    font-weight: bold; 
+}
+
+.quote-display {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+}
+
+.quote-input {
+    background-color: transparent;
+    border: 2px solid #A1922E; 
+    outline: none; 
+    width: 100%; 
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem; 
+    font-size: 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    }
+
+.quote-input:focus {
+    border-color: black; 
+}
+
+.correct
+{
+    color:#00c403;
+}
+
+.incorrect
+{
+    color:#dd0000;
+    text-decoration: underline;
+}
+
+.modal {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-content {
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: transparent;
+}
+
+#returnHome {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.modal-btn:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.bottomSection {
+    position: absolute; 
+    bottom: 8rem;
+}
+
+.bottomBtn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: transparent;
+}
+
+#homeBtn {
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+}
+
+.bottomBtn:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
